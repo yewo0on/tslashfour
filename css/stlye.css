@@ -882,7 +882,7 @@ body.off::before {
 
 /*      미디어쿼리      */
 @media screen and (max-width: 1500px) {
-  #popup { opacity: 0; }
+  #popup { display: none !important;  }
 }
 
 @media screen and (max-width: 1020px) {

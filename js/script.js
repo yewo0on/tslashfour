@@ -92,51 +92,50 @@ const dayCloseBtn = document.querySelector(".popup_btn .dayClose_btn");
 
 // "close_btn" 버튼 클릭 시 팝업 닫기
 closeBtn.addEventListener('click', () => {
-popUp.style.display = "none";
+  popUp.style.display = "none";
 });
 
 // "dayClose_btn" 버튼 클릭 시 팝업 닫기
 dayCloseBtn.addEventListener("click", closePopup);
 
 function setCookie(name, value, days) {
-let expires = "";
-if (days) {
-  let date = new Date();
-  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-  expires = "; expires=" + date.toUTCString();
-}
-document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+  let expires = "";
+  if (days) {
+    let date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    expires = "; expires=" + date.toUTCString();
+  }
+  document.cookie = name + "=" + (value || "")  + expires + "; path=/";
 }
 
 function getCookie(name) {
-let nameEQ = name + "=";
-let ca = document.cookie.split(';');
-for(let i = 0; i < ca.length; i++) {
-  let c = ca[i];
-  while (c.charAt(0) === ' ') c = c.substring(1, c.length);
-  if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
-}
-return null;
+  let nameEQ = name + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+  }
+  return null;
 }
 
 function showPopup() {
-let popup = document.querySelector('#popup');
-let popupCookie = getCookie('hidePopup');
+  let popup = document.querySelector('#popup');
+  let popupCookie = getCookie('hidePopup');
 
-if (popupCookie === null) {
-  popup.style.display = 'block'; // 조건 충족 시에만 보임
-}
+  if (popupCookie === null) {
+    popup.style.display = 'block'; // 조건 충족 시에만 보임
+  }
 }
 
 function closePopup() {
-let popup = document.querySelector('#popup'); // 첫 번째 팝업만 선택
-popup.style.display = 'none';
-setCookie('hidePopup', 'true', 1); // 오늘 하루 동안 숨김 (쿠키 만료시간 1일)
+  let popup = document.querySelector('#popup'); // 첫 번째 팝업만 선택
+  popup.style.display = 'none';
+  setCookie('hidePopup', 'true', 1); // 오늘 하루 동안 숨김 (쿠키 만료시간 1일)
 }
 
 // 페이지 로드 시 팝업 표시 함수 호출
 showPopup();
-
 
 
 /*  Header Menu Event   */ 
@@ -226,21 +225,21 @@ const searchTrems = document.querySelector("nav .search_terms");
 const userService = document.querySelector("nav .user_service");
 
 searchBar.addEventListener('focus', () => {
-searchTrems.classList.add("on");
-userService.classList.add("off");
+  searchTrems.classList.add("on");
+  userService.classList.add("off");
 })
 searchBar.addEventListener('blur', () => {
-searchTrems.classList.remove("on");
-userService.classList.remove("off");
+  searchTrems.classList.remove("on");
+  userService.classList.remove("off");
 })
 
 /*  Category Hover Event   */ 
 const c_slide = document.querySelectorAll(".categorySwiper .swiper-slide");
-c_slide.forEach(slide => {
-slide.addEventListener('mouseenter', () => {
-  c_slide.forEach(s => s.classList.remove("on"));
-  slide.classList.add("on");
-});
+  c_slide.forEach(slide => {
+  slide.addEventListener('mouseenter', () => {
+    c_slide.forEach(s => s.classList.remove("on"));
+    slide.classList.add("on");
+  });
 });
 
 /*  NewBest Event  */
@@ -266,11 +265,11 @@ const bestProducts = document.querySelector(".bestSwiper");
 newBtn.addEventListener('click', () => { toggleActive('new'); });
 bestBtn.addEventListener('click', () => { toggleActive('best'); });
 nbImgSwiper.on('slideChange', () => {
-if (nbImgSwiper.activeIndex === 0) {
-  toggleActive('new');
-} else if (nbImgSwiper.activeIndex === 1) {
-  toggleActive('best');
-}
+  if (nbImgSwiper.activeIndex === 0) {
+    toggleActive('new');
+  } else if (nbImgSwiper.activeIndex === 1) {
+    toggleActive('best');
+  }
 });
 
 function toggleActive(type) {
