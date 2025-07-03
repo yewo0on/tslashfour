@@ -940,6 +940,7 @@ body.off::before {
 @media screen and (max-width: 640px) {
   #header nav { width: 90%; font-size: 10px; }
   #main section { font-size: 10px; }
+  #main .shop_all > a { font-size: 11px; margin-top: 5px; }
   #header .nav_top .gnb > .more .gnb_tit::before,
   #header .nav_top .lnb > .more::before { width: 12px; height: 12px; }
   #header .nav_bt #search_wrap { height: 45px; }
