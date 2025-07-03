@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/stlye.css">
+</head>
+
+<body>
+  <header id="header">
+    <!-- text_flow -->
+    <div class="text_flow">
+      <div class="text text1">
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+      </div>
+      <div class="text text2">
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+        <p>신규 가입시 즉시 사용가능한 적립금 3000점 증정!</p>
+      </div>
+    </div>
+    <div class="header_wrap">
+      <!--  menu  -->
+      <div class="menu">
+        <span class="menu_icon"></span>
+        <nav>
+          <div class="nav_top">
+            <ul class="gnb">
+              <li class="gnb_li more">
+                <h2 class="gnb_tit">SHOP</h2>
+                <ul class="lnb">
+                  <li><h3 class="lnb_tit"><a href="#">ALL</a></h3></li>
+                  <li class="more">
+                    <h3 class="lnb_tit">LIP</h3>
+                    <ul class="sub">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">글레이즈 립 체인저</a></li>
+                      <li><a href="#">스컬프트 립 쉐이퍼</a></li>
+                      <li><a href="#">글레이즈 립 슬리핑 부스터</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <h3 class="lnb_tit">FACE</h3>
+                    <ul class="sub">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">스트로빙 페이스 큐브</a></li>
+                      <li><a href="#">이레이징 페이스 큐브</a></li>
+                      <li><a href="#">올 오버 페이스 블러쉬</a></li>
+                      <li><a href="#">프라이밍 스킨 클리머</a></li>
+                      <li><a href="#">플래시 스팟 컨실러</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <h3 class="lnb_tit">EYE</h3>
+                    <ul class="sub">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">브로우 파우더 듀오</a></li>
+                      <li><a href="#">샤이닝 브로우 카라</a></li>
+                    </ul>
+                  </li>
+                  <li class="more">
+                    <h3 class="lnb_tit">TOOL</h3>
+                    <ul class="sub">
+                      <li><a href="#">전체</a></li>
+                      <li><a href="#">립 부스팅 스파츌라</a></li>
+                      <li><a href="#">미니 브로우 브러쉬</a></li>
+                    </ul>
+                  </li>
+                  <li><h3 class="lnb_tit"><a href="#">SET</a></h3></li>
+                </ul>
+              </li>
+              <li class="gnb_li">
+                <h2 class="gnb_tit"><a href="#">TUTORIALS</a></h2>
+              </li>
+              <li class="gnb_li more">
+                <h2 class="gnb_tit">COMMUNITY</h2>
+                <ul class="lnb">
+                  <li><h3 class="lnb_tit"><a href="#">EVENT</a></h3></li>
+                  <li><h3 class="lnb_tit"><a href="#">REVIEW</a></h3></li>
+                  <li><h3 class="lnb_tit"><a href="#">MEMBERSHIP</a></h3></li>
+                  <li><h3 class="lnb_tit"><a href="#">NOTICE</a></h3></li>
+                  <li><h3 class="lnb_tit"><a href="#">Q&A</a></h3></li>
+                </ul>
+              </li>
+              <li class="gnb_li more">
+                <h2 class="gnb_tit">ABOUT</h2>
+                <ul class="lnb">
+                  <li><h3 class="lnb_tit"><a href="#">STORY</a></h3></li>
+                  <li><h3 class="lnb_tit"><a href="#">TIMELINE</a></h3></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="nav_bt">
+            <form action="" id="search_wrap">
+              <input type="text" id="search_bar" placeholder="Search">
+              <img src="images/ico_search.svg" alt="돋보기 아이콘" class="search_icon">
+              <ul class="search_terms">
+                <li class="keyword"><a href="#">올 오버 블러쉬</a></li>
+                <li class="keyword"><a href="#">누 블랙</a></li>
+                <li class="keyword"><a href="#">하이라이터</a></li>
+                <li class="keyword"><a href="#">립 쉐이퍼</a></li>
+                <li class="keyword"><a href="#">화이트 큐브</a></li>
+                <li class="keyword"><a href="#">립 체인지</a></li>
+                <li class="keyword"><a href="#">페이스 큐브</a></li>
+              </ul>
+            </form>
+            <ul class="user_service">
+              <li class="login"><a href="#">LOGIN</a></li>
+              <li class="cart"><a href="#">CART (<span class="cart_count">0</span>)</a></li>
+              <li class="langs">
+                <a href="#" class="on">KR</a>
+                <span>/</span>
+                <a href="#" class="off">EN</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- 로고 -->
+      <h1 class="logo">
+        <a href="https://twoslashfour.com/">
+          <img src="images/bi_logo.png" alt="TWO SLASH FOUR 로고 이미지" class="logo_img">
+        </a>
+      </h1>
+      <!-- 사용자 메뉴 -->
+      <ul class="user_menu">
+        <li class="mall">SHOP</li>
+        <li class="mypage"><img src="images/ico_mypage.svg" alt="마이페이지 바로가기 아이콘"></li>
+        <li class="cart">
+          <img src="images/ico_cart.svg" alt="장바구니 바로가기 아이콘">
+          <span class="cart_count">0</span>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- //header -->
+  <main id="main">
+    <div id="popup">
+      <img src="images/popup_img.jpeg" alt="popup_img">
+      <div class="popup_btn">
+        <span class="dayClose_btn">오늘 하루 열지 않기</span>
+        <span class="close_btn">닫기</span>
+      </div>
+    </div>
+    <!-- //popup -->
+
+    <section id="banner">
+      <div class="swiper bannerSwiper">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide swiper-slide1">
+            <div class="txt">
+              <h1 class="tit">ERASE EASY</h1>
+              <p class="desc">메이크업의 완성도를 높이는 라스트 터치! 이레이징 퍼스크 큐브를 만나보세요!</p>
+              <button class="more"><a href="#">VIEW MORE</a></button>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide2">
+            <div class="txt">
+              <h1 class="tit">5월 NEW & BEST ITEMS</h1>
+              <p class="desc">NEW 브로우와 BEST 제품들을 한정 혜택으로 만나보세요!</p>
+              <button class="more"><a href="#">VIEW MORE</a></button>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide3">
+            <div class="txt">
+              <h1 class="tit">FADE OUT, LOOK CLEAR</h1>
+              <p class="desc">힘을 뺄수록 더 선명하게 완성되는 메이크업 룩 #페이드브로우</p>
+              <button class="more"><a href="#">VIEW MORE</a></button>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide4">
+            <div class="txt">
+              <h1 class="tit">RE; SHAPE YOUR LIPS</h1>
+              <p class="desc">클릭 한 번으로 쉽고 빠르게! 스컬프트 립 쉐이퍼 #아웃테디 #아웃토프</p>
+              <button class="more"><a href="#">VIEW MORE</a></button>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide5">
+            <div class="txt">
+              <h1 class="tit">PALE ILLUMINATING</h1>
+              <p class="desc">다크닝 없이 화사하게 안색을 밝혀줄 엔젤릭 베이스 라인을 만나보세요!</p>
+              <button class="more"><a href="#">VIEW MORE</a></button>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide6">
+            <div class="txt">
+              <h1 class="tit">BREAK A FRAME</h1>
+              <p class="desc">블러셔의 틀을 깬 룰 브레이커, 올 오버 페이스 블러쉬를 만나보세요!</p>
+              <button class="more"><a href="#">VIEW MORE</a></button>
+            </div>
+          </li>
+          <li class="swiper-slide swiper-slide7">
+            <div class="txt">
+              <h1 class="tit">PLAY CUBE!</h1>
+              <p class="desc">밝고 청량한 무드를 더하는 셔벗 피치 컬러, 스트로빙 페이스 큐브 #피치!</p>
+              <button class="more"><a href="#">VIEW MORE</a></button>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-button-next banner-next"><img src="images/ico_arrow_fill_right.svg" alt="오른쪽 화살표"></div>
+        <div class="swiper-button-prev banner-prev"><img src="images/ico_arrow_fill_left.svg" alt="왼쪽 화살표"></div>
+      </div>
+    </section>
+    <!-- //banner -->
+    
+    <section id="category" class="section_padding">
+      <div class="cont_info">
+        <h1 class="title">SHOP BY CATEGORY</h1>
+        <span class="shop_all">
+          <a href="http://shop1.twoslashfour23.cafe24.com/skin-skin10/product/all.html">SHOP ALL</a>
+        </span>
+      </div>
+      <div class="swiper categorySwiper cont_padding">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide on">
+            <a href="#">
+              <img src="images/main_category_lip.jpg" alt="main_category_lip" class="category_img">
+              <div class="txt_wrap">
+                <p class="txt">LIP</p>
+                <button class="more_btn"><p class="more">MORE</p></button>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="images/main_category_face.jpg" alt="main_category_face" class="category_img">
+              <div class="txt_wrap">
+                <p class="txt">FACE</p>
+                <button class="more_btn"><p class="more">MORE</p></button>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="images/main_category_eye.jpg" alt="main_category_eye" class="category_img">
+              <div class="txt_wrap">
+                <p class="txt">EYE</p>
+                <button class="more_btn"><p class="more">MORE</p></button>
+              </div>
+            </a>
+          </li>
+          <li class="swiper-slide">
+            <a href="#">
+              <img src="images/main_category_tool.jpg" alt="main_category_tool" class="category_img">
+              <div class="txt_wrap">
+                <p class="txt">TOOL</p>
+                <button class="more_btn"><p class="more">MORE</p></button>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- //category -->
+    <section id="newBest" class="section_padding">
+      <div class="nb_wrap">
+        <div class="swiper nbImgSwiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide new_ImgSlide"></li>
+            <li class="swiper-slide best_ImgSlide"></li>
+          </ul>
+          <div class="swiper-button-next nbImg-next"><img src="images/ico_arrow_fill_right.svg" alt="오른쪽 화살표"></div>
+          <div class="swiper-button-prev nbImg-prev"><img src="images/ico_arrow_fill_left.svg" alt="왼쪽 화살표"></div>
+        </div>
+        <div class="products cont_padding">
+          <div class="cont_info">
+            <div class="nb_btns">
+              <span class="new_btn active">NEW</span>
+              <span class="best_btn">BEST</span>
+            </div>
+            <span class="shop_all">
+              <a href="http://shop1.twoslashfour23.cafe24.com/skin-skin10/product/all_test.html">
+                SHOP ALL
+              </a>
+            </span>
+          </div>
+          <div class="nb_products">
+            <div class="swiper newSwiper">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide product1">
+                  <div class="pd_img">
+                    <img src="images/new_browcara.jpg" alt="샤이닝 브로우 컬러 카라 이미지"
+                      data-hover="images/new_browcara_h.gif"
+                      data-original="images/new_browcara.jpg">
+                    <div class="pd_top">
+                      <span class="label">NEW</span>
+                      <span class="cart_icon"><img src="images/ico_cart1.svg" alt="장바구니 아이콘"></span>
+                    </div>
+                  </div>
+                  <div class="txt">
+                    <div class="txt_top">
+                      <h2 class="pd_name">샤이닝 브로우 컬러 카라(3 Colors)</h2>
+                      <span class="wish_icon"><img src="images/ico_wish.svg" alt="찜 아이콘"></span>
+                    </div>
+                    <p class="price">₩17,000</p>
+                  </div>
+                </li>
+                <li class="swiper-slide product2">
+                  <div class="pd_img">
+                    <img src="images/new_browpowder.jpg" alt="페이드 브로우 파우더 듀오 이미지"
+                      data-hover="images/new_browpowder_h.gif"
+                      data-original="images/new_browpowder.jpg">
+                    <div class="pd_top">
+                      <span class="label">NEW</span>
+                      <span class="cart_icon"><img src="images/ico_cart1.svg" alt="장바구니 아이콘"></span>
+                    </div>
+                  </div>
+                  <div class="txt">
+                    <div class="txt_top">
+                      <h2 class="pd_name">페이드 브로우 파우더 듀오(3 Colors)</h2>
+                      <span class="wish_icon"><img src="images/ico_wish.svg" alt="찜 아이콘"></span>
+                    </div>
+                    <p class="price">₩20,000</p>
+                  </div>
+                </li>
+                <li class="swiper-slide product3">
+                  <div class="pd_img">
+                    <img src="images/new_mini-brush.jpg" alt="미니 브로우 브러쉬 이미지"
+                      data-hover="images/new_mini-brush_h.gif"
+                      data-original="images/new_mini-brush.jpg">
+                    <div class="pd_top">
+                      <span class="label">NEW</span>
+                      <span class="cart_icon"><img src="images/ico_cart1.svg" alt="장바구니 아이콘"></span>
+                    </div>
+                  </div>
+                  <div class="txt">
+                    <div class="txt_top">
+                      <h2 class="pd_name">미니 브로우 브러쉬</h2>
+                      <span class="wish_icon"><img src="images/ico_wish.svg" alt="찜 아이콘"></span>
+                    </div>
+                    <p class="price">₩8,000</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper bestSwiper off">
+              <ul class="swiper-wrapper">
+                <li class="swiper-slide product1">
+                  <div class="pd_img">
+                    <img src="images/best_facecube.jpg" alt="이레이징 페이스 큐브 이미지"
+                      data-hover="images/best_facecube_h.gif"
+                      data-original="images/best_facecube.jpg">
+                    <div class="pd_top">
+                      <span class="label">BEST</span>
+                      <span class="cart_icon"><img src="images/ico_cart1.svg" alt="장바구니 아이콘"></span>
+                      <span class="custom_icon"><img src="images/custom_pr_rank.png" alt="파우더룸 파우더/팩트 부문 1위 아이콘"></span>
+                    </div>
+                  </div>
+                  <div class="txt">
+                    <div class="txt_top">
+                      <h2 class="pd_name">이레이징 페이스 큐브</h2>
+                      <span class="wish_icon"><img src="images/ico_wish.svg" alt="찜 아이콘"></span>
+                    </div>
+                    <p class="price">₩28,000</p>
+                  </div>
+                </li>
+                <li class="swiper-slide product2">
+                  <div class="pd_img">
+                    <img src="images/best_faceblush.jpg" alt="올 오버 페이스 블러쉬 딤 베이지 이미지"
+                      data-hover="images/best_faceblush_h.gif"
+                      data-original="images/best_faceblush.jpg">
+                    <div class="pd_top">
+                      <span class="label">BEST</span>
+                      <span class="cart_icon"><img src="images/ico_cart1.svg" alt="장바구니 아이콘"></span>
+                      <span class="custom_icon"><img src="images/custom_pr_pick.png" alt="파우더룸 블러셔 부문 PICK 아이콘"></span>
+                    </div>
+                  </div>
+                  <div class="txt">
+                    <div class="txt_top">
+                      <h2 class="pd_name">올 오버 페이스 블러쉬 딤 베이지</h2>
+                      <span class="wish_icon"><img src="images/ico_wish.svg" alt="찜 아이콘"></span>
+                    </div>
+                    <p class="price">₩25,000</p>
+                  </div>
+                </li>
+                <li class="swiper-slide product3">
+                  <div class="pd_img">
+                    <img src="images/best_facecube_white.jpg" alt="스트로빙 페이스 큐브 화이트 이미지"
+                      data-hover="images/best_facecube_white_h.gif"
+                      data-original="images/best_facecube_white.jpg">
+                    <div class="pd_top">
+                      <span class="label">BEST</span>
+                      <span class="cart_icon"><img src="images/ico_cart1.svg" alt="장바구니 아이콘"></span>
+                    </div>
+                  </div>
+                  <div class="txt">
+                    <div class="txt_top">
+                      <h2 class="pd_name">스트로빙 페이스 큐브 화이트</h2>
+                      <span class="wish_icon"><img src="images/ico_wish.svg" alt="찜 아이콘"></span>
+                    </div>
+                    <p class="price">₩28,000</p>
+                  </div>
+                </li>
+                <li class="swiper-slide product4">
+                  <div class="pd_img">
+                    <img src="images/best_lipchanger.jpg" alt="글레이즈 립 체인저 누 블랙 이미지"
+                      data-hover="images/best_lipchanger_h.gif"
+                      data-original="images/best_lipchanger.jpg">
+                    <div class="pd_top">
+                      <span class="label">BEST</span>
+                      <span class="cart_icon"><img src="images/ico_cart1.svg" alt="장바구니 아이콘"></span>
+                      <span class="custom_icon"><img src="images/custom_glowpick.png" alt="글로우 픽 어워드 립글로스 부문 Rookie 아이콘"></span>
+                    </div>
+                  </div>
+                  <div class="txt">
+                    <div class="txt_top">
+                      <h2 class="pd_name">글레이즈 립 체인저 누 블랙</h2>
+                      <span class="wish_icon"><img src="images/ico_wish.svg" alt="찜 아이콘"></span>
+                    </div>
+                    <p class="price">₩27,000</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //new-best -->
+    <section id="tutorials" class="section_padding">
+      <div class="tutorial_txt">
+        <div class="cont_info">
+          <h1 class="title">TUTORIALS</h1>
+          <span class="shop_all">
+            <a href="http://shop1.twoslashfour23.cafe24.com/skin-skin10/product/all.html">
+              MORE
+            </a>
+          </span>
+        </div>
+        <p class="desc">이사배의 노하우를 담은<br> 지금 가장 쉽고 빠른 HOW-TO</p>
+      </div>
+      <div class="swiper tSwiper cont_padding">
+        <div class="swiper-button-next tSwiper-next"><img src="images/ico_arrow_fill_right.svg" alt="오른쪽 화살표"></div>
+        <div class="swiper-button-prev tSwiper-prev"><img src="images/ico_arrow_fill_left.svg" alt="왼쪽 화살표"></div>
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide slide1">
+            <div class="t_bg_img">
+              <h2 class="t_name">FADE BROW POWDER DUO</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info on">
+                  <img src="images/eye_browpowder_tiny.jpg" alt="eye_browpowder_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">페이드 브로우 파우더 듀오</h3>
+                    <p class="desc">눈썹 톤을 자연스럽게 잡아주는 화사한 블론드 컬러를 만나보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide2">
+            <div class="t_bg_img">
+              <h2 class="t_name">SHINING BROW COLOR CARA</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/eye_browcara_tiny.jpg" alt="tutorials_eye_browcara" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">샤이닝 브로우 컬러 카라</h3>
+                    <p class="desc">눈썹 컬러를 한 톤 밝혀 샤이닝한 브로우 컬러를 연출해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide3">
+            <div class="t_bg_img">
+              <h2 class="t_name">SKIN GLIMMER</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/face_glimmer_tiny.jpg" alt="face_glimmer_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">글리머</h3>
+                    <p class="desc">화사한 반사 빛 펄감의 레몬베이지 프라이머로 맑고 매끈한 첫 베이스를 완성해보세요.</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide4">
+            <div class="t_bg_img">
+              <h2 class="t_name">FLASH CONCEALER</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/face_concealer_tiny.jpg" alt="face_concealer_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">페일 레몬</h3>
+                    <p class="desc">맑고 페일한 레몬 베이스로 얼굴의 어두운 부위에 화사함을 더해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide5">
+            <div class="t_bg_img">
+              <h2 class="t_name">ERASING CUBE</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/facecube_erasing_tiny.jpg" alt="facecube_erasing_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">스킨</h3>
+                    <p class="desc">언제 어디서나 매끈하게 정돈된 피부를 완성해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide6">
+            <div class="t_bg_img">
+              <h2 class="t_name">ALL OVER BLUSH</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/faceblush_baebeige_tiny.jpg" alt="faceblush_baebeige_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">베 베이지</h3>
+                    <p class="desc">플랫한 얼굴에 볼륨감과 걸리쉬 무드를 더해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+                <li class="t_info">
+                  <img src="images/faceblush_dimbeige_tiny.jpg" alt="faceblush_dimbeige_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">딤 베이지</h3>
+                    <p class="desc">쉐딩 효과와 함께 시크릿 분위기를 완성해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide7">
+            <div class="t_bg_img">
+              <h2 class="t_name">LIP BOOSTER</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/lipbooster_calmblack_tiny.jpg" alt="lipbooster_calmblack_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">캄 블랙</h3>
+                    <p class="desc">간편하게 립 컨디션 부스팅이 필요하다면?</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide8">
+            <div class="t_bg_img">
+              <h2 class="t_name">FADE BROW POWDER DUO</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/faceblush_baebeige_tiny.jpg" alt="faceblush_baebeige_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">화이트</h3>
+                    <p class="desc">화이트 컨투어로 시원한 입체감을 더해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+                <li class="t_info">
+                  <img src="images/faceblush_dimbeige_tiny.jpg" alt="faceblush_dimbeige_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">퍼플</h3>
+                    <p class="desc">차가운 페일 퍼플 빛으로 화사한 입체감을 더해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide9">
+            <div class="t_bg_img">
+              <h2 class="t_name">FADE BROW POWDER DUO</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/lipshaper_outtaupe_tiny.jpg" alt="lipshaper_outtaupe_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">아웃 토프</h3>
+                    <p class="desc">립 음영라이너 아웃 토프로 원하는 립 쉐입을 만들어보세요.</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+                <li class="t_info">
+                  <img src="images/lipshaper_outteddy_tiny.jpg" alt="lipshaper_outteddy_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">아웃 테디</h3>
+                    <p class="desc">립 아웃라이너 아웃 테디로 자연스러운 볼드립을 연출해 보세요.</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="swiper-slide slide10">
+            <div class="t_bg_img">
+              <h2 class="t_name">FADE BROW POWDER DUO</h2>
+              <div class="t_btns">
+                <span class="view_btn"><a href="#">VIEW</a></span>
+                <span class="shop_btn"><a href="#">SHOP</a></span>
+              </div>
+            </div>
+            <div class="t_info_box">
+              <ul class="t_info_list">
+                <li class="t_info">
+                  <img src="images/lipchanger_nublack_tiny.jpg" alt="lipchanger_nublack_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">누 블랙</h3>
+                    <p class="desc">시크한 분위기를 원한다면? 누 블랙을 레이어링 해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+                <li class="t_info">
+                  <img src="images/lipchanger_nulavender_tiny.jpg" alt="lipchanger_nulavender_tiny" class="t_pd_img">
+                  <div class="t_info_txt">
+                    <h3 class="t_pd_name">누 라벤더</h3>
+                    <p class="desc">누 라벤더로 청량한 무드를 손쉽게 더해보세요!</p>
+                  </div>
+                  <i class="border_line border_l"></i>
+                  <i class="border_line border_t"></i>
+                  <i class="border_line border_r"></i>
+                  <i class="border_line border_b"></i>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- //tutorials -->
+    <section id="productFlow">
+      <ul class="img_list">
+        <li><a href="#"><img src="images/eye_browpowder_fuzzyblonde_auto.jpg" alt="eye_browpowder_fuzzyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browpowder_rudyblonde_auto.jpg" alt="eye_browpowder_rudyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browpowder_sandyblonde_auto.jpg" alt="eye_browpowder_sandyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browcara_bunnyblonde_auto.jpg" alt="eye_browcara_bunnyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browcara_honeyblonde_auto.jpg" alt="eye_browcara_honeyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browcara_mochablonde_auto.jpg" alt="eye_browcara_mochablonde_auto"></a></li>
+        <li><a href="#"><img src="images/tool_minibrowbrush_auto.jpg" alt="tool_minibrowbrush_auto"></a></li>
+        <li><a href="#"><img src="images/face_glimmer_auto.jpg" alt="face_glimmer_auto"></a></li>
+        <li><a href="#"><img src="images/face_concealer_auto.jpg" alt="face_concealer_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_peach_auto.jpg" alt="facecube_peach_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_erasingcube_auto.jpg" alt="facecube_erasingcube_auto"></a></li>
+        <li><a href="#"><img src="images/lipshaper_outtaupe_auto.jpg" alt="lipshaper_outtaupe_auto"></a></li>
+        <li><a href="#"><img src="images/lipshaper_outteddy_auto.jpg" alt="lipshaper_outteddy_auto"></a></li>
+        <li><a href="#"><img src="images/lipshaper_outrosy_auto.jpg" alt="lipshaper_outrosy_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nured_auto.jpg" alt="lipchanger_nured_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nulavender_auto.jpg" alt="lipchanger_nured_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nuginger_auto.jpg" alt="lipchanger_nured_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nucoco_auto.jpg" alt="lipchanger_nucoco_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nublackcherry_auto.jpg" alt="lipchanger_nublackcherry_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nublack_auto.jpg" alt="lipchanger_nublack_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nuberry_auto.jpg" alt="lipchanger_nuberry_auto"></a></li>
+        <li><a href="#"><img src="images/tool_spatula_auto.jpg" alt="tool_spatula_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_purple_auto.jpg" alt="facecube_purple_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_white_auto.jpg" alt="facecube_white_auto"></a></li>
+        <li><a href="#"><img src="images/lipbooster_calmblack_auto.jpg" alt="lipbooster_calmblack_auto"></a></li>
+        <li><a href="#"><img src="images/faceblush_baebeige_auto.jpg" alt="faceblush_baebeige_auto"></a></li>
+        <li><a href="#"><img src="images/faceblush_dimbeige_auto.jpg" alt="faceblush_dimbeige_auto"></a></li>
+        <li><a href="#"><img src="images/faceblush_rumbeige_auto.jpg" alt="faceblush_rumbeige_auto"></a></li>
+      </ul>
+      <ul class="img_list">
+        <li><a href="#"><img src="images/eye_browpowder_fuzzyblonde_auto.jpg" alt="eye_browpowder_fuzzyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browpowder_rudyblonde_auto.jpg" alt="eye_browpowder_rudyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browpowder_sandyblonde_auto.jpg" alt="eye_browpowder_sandyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browcara_bunnyblonde_auto.jpg" alt="eye_browcara_bunnyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browcara_honeyblonde_auto.jpg" alt="eye_browcara_honeyblonde_auto"></a></li>
+        <li><a href="#"><img src="images/eye_browcara_mochablonde_auto.jpg" alt="eye_browcara_mochablonde_auto"></a></li>
+        <li><a href="#"><img src="images/tool_minibrowbrush_auto.jpg" alt="tool_minibrowbrush_auto"></a></li>
+        <li><a href="#"><img src="images/face_glimmer_auto.jpg" alt="face_glimmer_auto"></a></li>
+        <li><a href="#"><img src="images/face_concealer_auto.jpg" alt="face_concealer_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_peach_auto.jpg" alt="facecube_peach_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_erasingcube_auto.jpg" alt="facecube_erasingcube_auto"></a></li>
+        <li><a href="#"><img src="images/lipshaper_outtaupe_auto.jpg" alt="lipshaper_outtaupe_auto"></a></li>
+        <li><a href="#"><img src="images/lipshaper_outteddy_auto.jpg" alt="lipshaper_outteddy_auto"></a></li>
+        <li><a href="#"><img src="images/lipshaper_outrosy_auto.jpg" alt="lipshaper_outrosy_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nured_auto.jpg" alt="lipchanger_nured_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nulavender_auto.jpg" alt="lipchanger_nured_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nuginger_auto.jpg" alt="lipchanger_nured_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nucoco_auto.jpg" alt="lipchanger_nucoco_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nublackcherry_auto.jpg" alt="lipchanger_nublackcherry_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nublack_auto.jpg" alt="lipchanger_nublack_auto"></a></li>
+        <li><a href="#"><img src="images/lipchanger_nuberry_auto.jpg" alt="lipchanger_nuberry_auto"></a></li>
+        <li><a href="#"><img src="images/tool_spatula_auto.jpg" alt="tool_spatula_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_purple_auto.jpg" alt="facecube_purple_auto"></a></li>
+        <li><a href="#"><img src="images/facecube_white_auto.jpg" alt="facecube_white_auto"></a></li>
+        <li><a href="#"><img src="images/lipbooster_calmblack_auto.jpg" alt="lipbooster_calmblack_auto"></a></li>
+        <li><a href="#"><img src="images/faceblush_baebeige_auto.jpg" alt="faceblush_baebeige_auto"></a></li>
+        <li><a href="#"><img src="images/faceblush_dimbeige_auto.jpg" alt="faceblush_dimbeige_auto"></a></li>
+        <li><a href="#"><img src="images/faceblush_rumbeige_auto.jpg" alt="faceblush_rumbeige_auto"></a></li>
+      </ul>
+    </section>
+    <!-- //img_flow -->
+  </main>
+  <!-- //main -->
+  <footer id="footer">
+    <div class="ft_top">
+      <ul class="ft_info">
+        <li><a href="#" class="info_txt">tofor@twoslashfour.com</a></li>
+        <li><a href="#" class="info_txt">070-8094-0424</a></li>
+        <li class="info_txt">Mon - Fri (1PM - 5PM) <span class="off_days">Sat.Sun.Holiday Off</span></li>
+      </ul>
+      <ul class="sns">
+        <li class="insta">
+          <a href="#">
+            <img src="images/ico_instagram.svg" alt="인스타그램 아이콘" class="sns_icon">
+          </a>
+        </li>
+        <li class="youtube">
+          <a href="#">
+            <img src="images/ico_youtube.svg" alt="유튜브 아이콘" class="sns_icon">
+          </a>
+        </li>
+        <li class="facebook">
+          <a href="#">
+            <img src="images/ico_kakao.svg" alt="카카오톡 아이콘" class="sns_icon">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="ft_logo">
+      <img src="images/logo_black_stroke.svg" alt="로고 이미지">
+    </div>
+    <ul class="fnb">
+      <li class="fnb_txt">© 2023</li>
+      <li class="fnb_txt"><a href="#" class="strong_txt">개인정보처리방침</a></li>
+      <li><a href="#" class="fnb_txt">이용약관</a></li>
+      <li><a href="#" class="fnb_txt">사업자정보확인</a></li>
+      <li class="fnb_txt">주식회사 투슬래시포</li>
+      <li class="fnb_txt">사업자등록번호: 611-87-02264</li>
+      <li class="fnb_txt">대표자: 이사배</li>
+      <li class="fnb_txt">개인정보 보호 책임자: 이사배</li>
+      <li class="fnb_txt">04386 서울특별시 용산구 한강대로 100 (한강로2가) 7층</li>
+      <li class="fnb_txt">통신판매업신고:제 2023-서울용산-0128 호</li>
+    </ul>
+  </footer>
+  <!-- //footer -->
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
