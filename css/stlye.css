@@ -447,6 +447,7 @@ body.off::before {
 #banner .swiper-slide .txt .desc {
   font-size: 1.5em;
   margin-bottom: 1.5em;
+  word-break: keep-all;
 }
 #banner .swiper-slide .txt .more {
   padding: 0.7em 1.3em;
@@ -740,7 +741,8 @@ body.off::before {
 #tutorials .tSwiper .t_info_box .t_info {
   width: 100%;
   padding: 0.8em;
-  padding-right: 1em;
+  /* padding-right: 1em; */
+  word-break: keep-all;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -949,8 +951,8 @@ body.off::before {
   #header .nav_bt .user_service > li > a { font-size: 12px; }
   #banner .bannerSwiper { height: 530px; }
   #banner .swiper-slide { background-position: 80% 100%; }
-  #banner .swiper-slide .txt { width: 60%; }
-  #banner .swiper-slide .txt .tit { font-size: 2.8em; } 
+  #banner .swiper-slide .txt .tit { font-size: 2.8em; }
+  #banner .swiper-slide .txt .desc { width: 65%; }
   #category .categorySwiper .swiper-slide { height: 270px; }
   #newBest .nbImgSwiper .swiper-slide { height: 400px; }
   #tutorials .tutorial_txt .desc { font-size: 13px; }
