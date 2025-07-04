@@ -1,3 +1,14 @@
+// 초기 로딩 효과
+window.addEventListener('load', () => {
+  document.body.classList.add('loading');
+  document.querySelector('#banner').classList.add('banner-loading');
+
+  setTimeout(() => {
+    document.body.classList.remove('loading');
+    document.querySelector('#banner').classList.remove('banner-loading');
+  }, 2000);
+});
+
 /*  Initialize Swiper  */
 var bannerSwiper = new Swiper(".bannerSwiper", {
   loop: true,
