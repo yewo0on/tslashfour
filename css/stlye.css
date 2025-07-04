@@ -3,6 +3,7 @@
 li { list-style: none; }
 a { color: #000; text-decoration: none; }
 img { border: 0; vertical-align: top; }
+html { word-break: keep-all; }
 
 /* button 기본 스타일 초기화 */
 button { background: inherit; border:none; box-shadow:none;
@@ -447,7 +448,6 @@ body.off::before {
 #banner .swiper-slide .txt .desc {
   font-size: 1.5em;
   margin-bottom: 1.5em;
-  word-break: keep-all;
 }
 #banner .swiper-slide .txt .more {
   padding: 0.7em 1.3em;
@@ -742,7 +742,6 @@ body.off::before {
   width: 100%;
   padding: 0.8em;
   /* padding-right: 1em; */
-  word-break: keep-all;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -958,7 +957,7 @@ body.off::before {
   #tutorials .tutorial_txt .desc { font-size: 13px; }
   #tutorials .tutorial_txt .desc > br { display: block; }
   #tutorials .tSwiper .swiper-slide { height: 360px; }
-  #tutorials .tSwiper .t_info_box .t_info_txt { font-size: 13px; padding-right: 40px; }
+  #tutorials .tSwiper .t_info_box .t_info_txt { font-size: 13px; padding-right: 10px; }
   #footer .ft_info { flex-direction: column; }
   #footer .ft_top .info_txt { font-size: 11px; }
 }
