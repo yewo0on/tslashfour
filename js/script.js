@@ -14,9 +14,13 @@ var bannerSwiper = new Swiper(".bannerSwiper", {
 var categorySwiper = new Swiper(".categorySwiper", {
   slidesPerView: 1.5,
   spaceBetween: 5,
+  slidesOffsetAfter: 20,
   breakpoints: {
     640: {
-      slidesPerView: 3.2,  //브라우저가 640보다 클 때
+      slidesPerView: 2.5,  //브라우저가 640보다 클 때
+    },
+    1024: {
+      slidesPerView: 'auto',  //브라우저가 1024보다 클 때
     },
   },
 });
@@ -233,7 +237,8 @@ searchBar.addEventListener('blur', () => {
   userService.classList.remove("off");
 })
 
-/*  Category Hover Event   */ 
+/*  Category Hover Event   */
+// on 클래스 - 크기 커지도록
 const c_slide = document.querySelectorAll(".categorySwiper .swiper-slide");
   c_slide.forEach(slide => {
   slide.addEventListener('mouseenter', () => {
@@ -241,6 +246,18 @@ const c_slide = document.querySelectorAll(".categorySwiper .swiper-slide");
     slide.classList.add("on");
   });
 });
+
+// hover 이벤트 - 슬라이드 이동
+const firstSlide = categorySwiper.slides[0];
+const lastSlideIndex = categorySwiper.slides.length - 1;
+const lastSlide = categorySwiper.slides[lastSlideIndex];
+firstSlide.addEventListener("mouseenter", function () {
+   categorySwiper.slideTo(0); // 첫 번째 슬라이드로 이동
+});
+lastSlide.addEventListener("mouseenter", function() {
+  categorySwiper.slideTo(lastSlideIndex); // 마지막 슬라이드로 이동
+});
+
 
 /*  NewBest Event  */
 
