@@ -1,0 +1,254 @@
+/*      미디어쿼리      */
+@media screen and (max-width: 1500px) {
+  /* popup */
+  #popup {
+    display: none !important;
+  }
+  /* header */
+  #header {
+    height: 16vh;
+  }
+  #banner {
+    padding-top: 16vh; /* header 크기 */
+  }
+  /* banner */
+  #banner .bannerSwiper {
+    height: 520px;
+  }
+  /* swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin-top: -70px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  /* body */
+  body {
+    font-size: 10px;
+  }
+  /* swiper */
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  /* header */
+  #header {
+    height: 8vh;
+  }
+  #header .header_wrap {
+    padding: 0 10px;
+  }
+  #header .logo {
+    width: 210px;
+  }
+  #header .header_wrap .menu_icon,
+  #header .user_menu .mypage > img,
+  #header .user_menu .cart > img {
+    width: 24px;
+    height: 24px;
+  }
+  #header .user_menu .mall {
+    display: none;
+  }
+  #header nav {
+    height: calc(100vh - 8vh);
+    top: 8vh;
+  }
+
+  /* main */
+  #main section {
+    font-size: 11px;
+  }
+  #main .section_padding {
+    padding: 40px 0px 40px 20px;
+    box-sizing: border-box;
+  }
+  #main .cont_padding {
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  /* banner */
+  #banner {
+    padding-top: 8vh; /* header 크기 */
+  }
+
+  /* category */
+  #category .categorySwiper .swiper-slide {
+    height: 300px;
+  }
+  #category .swiper-slide .more_btn::before {
+    width: 11px;
+    right: 0.8em; /* 화살표 막대기 */
+  }
+  #category .swiper-slide .more_btn::after {
+    width: 6px;
+    height: 6px;
+    right: 0.8em; /* 화살표 세모 */
+  }
+  #category .swiper-slide .more_btn {
+    padding: 0.3em 0;
+    font-size: 12px;
+  }
+  #category .swiper-slide:hover .more_btn {
+    width: 80px;
+  }
+
+  /* newBest */
+  #newBest .nb_wrap {
+    height: auto;
+    flex-direction: column;
+  }
+  #newBest .cont_info {
+    width: 98%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  #newBest .nbImgSwiper {
+    margin-top: 40px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  #newBest .nbImgSwiper .swiper-slide {
+    height: 640px;
+  }
+  #newBest .nbImgSwiper .new_ImgSlide {
+    background-image: url(../images/main_newbest_new_250422_mo.webp);
+  }
+  #newBest .nbImgSwiper .best_ImgSlide {
+    background-image: url(../images/main_newbest_best_mo.webp);
+  }
+  #newBest .products {
+    width: 100%;
+  }
+  #newBest .products .nb_btns > span {
+    font-size: 1.6em;
+  }
+  #newBest .products .swiper {
+    margin-top: 15px;
+  }
+  #newBest .nb_products .swiper-slide .cart_icon {
+    width: 24px;
+    height: 24px;
+  }
+  #newBest .nb_products .swiper-slide .wish_icon > img {
+    width: 18px;
+    height: 18px;
+  }
+  #newBest .nb_products .swiper-slide .custom_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* tutorials */
+  #tutorials .tSwiper {
+    font-size: 11px;
+  }
+  #tutorials .tSwiper .swiper-slide {
+    height: 400px;
+  }
+
+  /* productFlow */
+  #productFlow {
+    height: 250px;
+  }
+  #productFlow .img_list > li {
+    margin: 0px 40px;
+  }
+
+  /* footer */
+  #footer {
+    padding: 10px;
+  }
+  #footer .ft_top .info_txt {
+    font-size: 14px;
+  }
+  #footer .ft_logo {
+    padding-bottom: 35px;
+  }
+  #footer .fnb {
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  #footer .sns .sns_icon {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* 모바일 (세로) */
+@media screen and (max-width: 640px) {
+  /* header */
+  #header nav {
+    width: 90%;
+    font-size: 10px;
+  }
+  #main section {
+    font-size: 10px;
+  }
+  #main .shop_all > a {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+  #header .nav_top .gnb > .more .gnb_tit::before,
+  #header .nav_top .lnb > .more::before {
+    width: 12px;
+    height: 12px;
+  }
+  #header .nav_bt #search_wrap {
+    height: 45px;
+  }
+  #header .nav_bt .user_service > li > a {
+    font-size: 12px;
+  }
+  /* banner  */
+  #banner .bannerSwiper {
+    height: 530px;
+  }
+  #banner .swiper-slide {
+    background-position: 80% 100%;
+  }
+  #banner .swiper-slide .txt .tit {
+    font-size: 2.8em;
+  }
+  #banner .swiper-slide .txt .desc {
+    width: 65%;
+  }
+
+  /* category */
+  #category .categorySwiper .swiper-slide {
+    height: 270px;
+  }
+
+  /* newBest */
+  #newBest .nbImgSwiper .swiper-slide {
+    height: 400px;
+  }
+
+  /* tutorials */
+  #tutorials .tutorial_txt .desc {
+    font-size: 13px;
+  }
+  #tutorials .tutorial_txt .desc > br {
+    display: block;
+  }
+  #tutorials .tSwiper .swiper-slide {
+    height: 360px;
+  }
+  #tutorials .tSwiper .t_info_box .t_info_txt {
+    font-size: 13px;
+    padding-right: 10px;
+  }
+
+  /* footer */
+  #footer .ft_info {
+    flex-direction: column;
+  }
+  #footer .ft_top .info_txt {
+    font-size: 11px;
+  }
+}
