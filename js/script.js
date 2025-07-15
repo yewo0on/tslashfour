@@ -2,21 +2,24 @@
 window.addEventListener("load", () => {
   setTimeout(() => {
     document.body.classList.remove("loading");
+    bannerSwiper.autoplay.start(); // 자동재생 켜기
   }, 2400); // 사라지기 시작하는 타이밍 조정 (옵션)
 });
 
 /*  Initialize Swiper  */
 var bannerSwiper = new Swiper(".bannerSwiper", {
   loop: true,
+  speed: 1000,
   autoplay: {
     delay: 2500,
-    disableOnInteraction: false,
+    disableOnInteraction: false, // 상호작용 후 알아서 자동재생됨
   },
   navigation: {
     nextEl: ".banner-next",
     prevEl: ".banner-prev",
   },
 });
+bannerSwiper.autoplay.stop(); // 처음엔 자동재생 꺼놓음
 
 var categorySwiper = new Swiper(".categorySwiper", {
   slidesPerView: 1.5,
