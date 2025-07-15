@@ -9,7 +9,8 @@ window.addEventListener("load", () => {
 /*  Initialize Swiper  */
 var bannerSwiper = new Swiper(".bannerSwiper", {
   loop: true,
-  speed: 1000,
+  speed: 1200,
+  ease: "ease-in-out",
   autoplay: {
     delay: 2500,
     disableOnInteraction: false, // 상호작용 후 알아서 자동재생됨
@@ -42,7 +43,7 @@ var categorySwiper = new Swiper(".categorySwiper", {
 var nbImgSwiper = new Swiper(".nbImgSwiper", {
   loop: false,
   autoplay: {
-    delay: 5000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   effect: "fade",
