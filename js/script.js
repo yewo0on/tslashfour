@@ -106,6 +106,9 @@ var tSwiper = new Swiper(".tSwiper", {
 /* loading scroll event */
 window.addEventListener("scroll", function () {
   body.classList.remove("loading");
+  // if (window.scrollY < 0) {
+  //   body.classList.add("loading");
+  // }
 });
 
 /*  Popup Close Event  */
