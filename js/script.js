@@ -169,6 +169,56 @@ if (menuIcon) {
   });
 }
 
+$(document).ready(function () {
+  // gnb 메뉴 클릭 이벤트
+  const gnbTitles = $(".gnb .more .gnb_tit");
+  gnbTitles.click(function () {
+    $(gnbTitles).not(this).removeClass("on");
+    $(gnbTitles).not(this).siblings(".lnb").stop(true, true).slideUp(400);
+
+    $(this).toggleClass("on"); //클릭된 애만 배경색 회색 + 화살표 위로
+    $(this).siblings(".lnb").stop().slideToggle(500); //클릭된 애만 슬라이드 업다운
+  });
+
+  // lnb 메뉴 클릭 이벤트
+  const lnbTitles = $(".lnb .lnb_tit");
+  lnbTitles.click(function () {
+    const $parent = $(this).closest(".lnb");
+    const $clicked = $(this);
+    const $clickedBtn = $(this).closest(".more");
+    const $submenu = $clicked.next(".sub"); // 서브메뉴
+    const isOpen = $submenu.is(":visible");
+
+    // 다른 서브메뉴 닫기 + 글자 회색처리
+    $parent
+      .find(".lnb_tit")
+      .not($clicked)
+      .addClass("off")
+      .next(".sub")
+      .stop(true, true)
+      .slideUp(500);
+
+    if (isOpen) {
+      // 서브메뉴가 열려있으면
+      $submenu.stop(true, true).slideUp(400, function () {
+        // 슬라이드 닫기
+        $clickedBtn.removeClass("on");
+        if ($(".lnb .sub:visible").length === 0) {
+          // 열려있는 서브메뉴가 0개일 때
+          $(".lnb .lnb_tit").removeClass("off"); // 글자 모두 검정
+        }
+      });
+    } else {
+      // 서브메뉴가 닫혀있으면
+      $clicked.removeClass("off"); // 클릭된 애는 검정 글자로
+      $submenu.stop(true, true).slideDown(500); // 서브메뉴 열기
+      $clickedBtn.addClass("on");
+    }
+  });
+});
+
+/** 메뉴 구현 자바스크립트 버전
+ * 
 // 메뉴 - gnb 클릭 이벤트
 const gnbTitles = document.querySelectorAll(".gnb .more .gnb_tit");
 
@@ -238,6 +288,7 @@ lnbTitles.forEach((lnbTit) => {
     }
   });
 });
+ */
 
 // 메뉴 - 검색 이벤트
 const searchBar = document.querySelector("nav #search_bar");

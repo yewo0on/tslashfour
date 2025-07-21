@@ -184,19 +184,29 @@ body.off::before {
 #header .nav_top .gnb > .more .gnb_tit.on::before {
   transform: rotate(180deg);
 }
+/*
+자바스크립트 버전 css
 #header .nav_top .lnb,
 #header .nav_top .sub {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
 }
-#header .nav_top .lnb {
-  padding: 0 1.4em;
-  background-color: #f6f7f9;
-}
+  
 #header .nav_top .lnb.on {
   max-height: 100vh;
 }
+#header .nav_top .sub.on {
+  max-height: 100vh;
+}
+*/
+#header .nav_top .lnb {
+  height: auto;
+  padding: 0 1.4em;
+  background-color: #f6f7f9;
+  display: none;
+}
+
 #header .nav_top .lnb > li {
   padding: 0.3em 0;
   position: relative;
@@ -212,11 +222,11 @@ body.off::before {
 }
 #header .nav_top .sub {
   width: 100%;
+  height: auto;
   margin-top: 10px;
+  display: none;
 }
-#header .nav_top .sub.on {
-  max-height: 100vh;
-}
+
 #header .nav_top .sub > li {
   padding: 7px 0px;
 }
