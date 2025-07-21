@@ -103,6 +103,11 @@ var tSwiper = new Swiper(".tSwiper", {
   },
 });
 
+/* loading scroll event */
+window.addEventListener("scroll", function () {
+  body.classList.remove("loading");
+});
+
 /*  Popup Close Event  */
 const popUp = document.querySelector("#popup");
 const closeBtn = document.querySelector(".popup_btn .close_btn");
@@ -172,7 +177,9 @@ if (menuIcon) {
 $(document).ready(function () {
   // gnb 메뉴 클릭 이벤트
   const gnbTitles = $(".gnb .more .gnb_tit");
-  gnbTitles.click(function () {
+  gnbTitles.click(function (e) {
+    e.preventDefault();
+
     $(gnbTitles).not(this).removeClass("on");
     $(gnbTitles).not(this).siblings(".lnb").stop(true, true).slideUp(400);
 
@@ -182,7 +189,9 @@ $(document).ready(function () {
 
   // lnb 메뉴 클릭 이벤트
   const lnbTitles = $(".lnb .lnb_tit");
-  lnbTitles.click(function () {
+  lnbTitles.click(function (e) {
+    e.preventDefault();
+
     const $parent = $(this).closest(".lnb");
     const $clicked = $(this);
     const $clickedBtn = $(this).closest(".more");
