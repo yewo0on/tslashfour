@@ -106,9 +106,6 @@ var tSwiper = new Swiper(".tSwiper", {
 /* loading scroll event */
 window.addEventListener("scroll", function () {
   body.classList.remove("loading");
-  // if (window.scrollY < 0) {
-  //   body.classList.add("loading");
-  // }
 });
 
 /*  Popup Close Event  */
@@ -177,6 +174,7 @@ if (menuIcon) {
   });
 }
 
+// 메뉴 구현 - 제이쿼리 버전
 $(document).ready(function () {
   // gnb 메뉴 클릭 이벤트
   const gnbTitles = $(".gnb .more .gnb_tit");
@@ -229,7 +227,7 @@ $(document).ready(function () {
   });
 });
 
-/** 메뉴 구현 자바스크립트 버전
+/** 메뉴 구현 - 자바스크립트 버전
  * 
 // 메뉴 - gnb 클릭 이벤트
 const gnbTitles = document.querySelectorAll(".gnb .more .gnb_tit");
