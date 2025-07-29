@@ -121,10 +121,10 @@ body.off::before {
 /* header - nav */
 #header nav {
   width: 580px;
-  height: calc(100vh - 12vh);
+  height: calc(100vh - 11vh);
   position: fixed;
   left: 0;
-  top: 12vh;
+  top: 11vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -132,7 +132,7 @@ body.off::before {
   background: #fff;
   z-index: 9999;
   transition: all 0.5s ease-in-out;
-  margin-left: -1000px;
+  margin-left: -600px;
   overflow-y: scroll;
   overflow-x: hidden;
   font-size: 14px;
@@ -532,7 +532,6 @@ body.off::before {
   z-index: 1000;
   opacity: 1;
   pointer-events: none;
-  transition: transform 0.6s ease, opacity 0.6s ease;
 }
 #loading-logo img {
   width: 100%;
@@ -545,6 +544,7 @@ body:not(.loading) #header .logo .logo_img {
 }
 body:not(.loading) #loading-logo {
   transform: translate(-50%, 50px) scale(0.3);
+  transition: transform 0.6s ease, opacity 0.6s ease;
   opacity: 0;
 }
 /* 초기 숨김 상태 */
@@ -553,6 +553,7 @@ body.loading #banner {
 }
 body.loading #banner .bannerSwiper {
   height: 100vh;
+  transition: none;
 }
 body.loading #popup,
 body.loading #header,
@@ -562,7 +563,6 @@ body.loading .swiper-button-next,
 body.loading .swiper-button-prev {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.8s ease 0.8s, visibility 0.8s linear 0.8s;
 }
 body:not(.loading) #popup,
 body:not(.loading) #header,
@@ -763,9 +763,20 @@ body:not(.loading) .swiper-button-prev {
   background-image: url(../images/main_newbest_best_pc.jpg);
 }
 
+#newBest .products,
+#newBest .nbImgSwiper {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+#newBest .products img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* newBest - products */
 #newBest .products {
-  width: 50%;
   height: 100%;
 }
 #newBest .cont_info {
@@ -816,7 +827,7 @@ body:not(.loading) .swiper-button-prev {
 }
 #newBest .nb_products .swiper-slide .pd_img {
   flex: 1 0 auto;
-  height: auto; /* 또는 auto, 부모 기준 비율 */
+  height: auto;
 }
 #newBest .nb_products .swiper-slide .pd_img > img {
   width: 100%;

@@ -91,6 +91,7 @@
   #banner .swiper-slide .txt .more {
     font-size: 1.3em;
   }
+
   /* category */
   #category .categorySwiper .swiper-slide {
     height: 300px;
@@ -123,6 +124,14 @@
     left: 0;
     top: 0;
   }
+
+  #newBest .products,
+  #newBest .nbImgSwiper {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+
   #newBest .nbImgSwiper {
     margin-top: 40px;
     padding-right: 20px;
@@ -137,14 +146,14 @@
   #newBest .nbImgSwiper .best_ImgSlide {
     background-image: url(../images/main_newbest_best_mo.webp);
   }
-  #newBest .products {
-    width: 100%;
-  }
+
   #newBest .products .nb_btns > span {
     font-size: 1.6em;
   }
   #newBest .products .swiper {
     margin-top: 15px;
+  }
+  #newBest .nb_products {
   }
   #newBest .nb_products .swiper-slide .cart_icon {
     width: 24px;

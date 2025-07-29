@@ -1,9 +1,13 @@
 /*  초기 로딩 효과  */
 window.addEventListener("load", () => {
+  // 윈도우 스크롤이 최상단일 경우에만 loading 클래스 추가
+  if (window.scrollY === 0) {
+    body.classList.add("loading");
+  }
   setTimeout(() => {
     document.body.classList.remove("loading");
     bannerSwiper.autoplay.start(); //자동재생 켜기
-  }, 2400); // 사라지기 시작하는 타이밍 조정 (옵션)
+  }, 2400); // 로딩 시간 2400ms초
 });
 
 /*  Initialize Swiper  */
@@ -152,7 +156,7 @@ function showPopup() {
 }
 
 function closePopup() {
-  let popup = document.querySelector("#popup"); // 첫 번째 팝업만 선택
+  let popup = document.querySelector("#popup"); // 팝업 가져옴
   popup.style.display = "none";
   setCookie("hidePopup", "true", 1); // 오늘 하루 동안 숨김 (쿠키 만료시간 1일)
 }
@@ -337,9 +341,18 @@ lastSlide.addEventListener("mouseenter", function () {
 
 /*  NewBest Event  */
 
-// 상품 이미지 호버
 const nbImgs = document.querySelectorAll(".nb_products .pd_img > img");
 
+// 이미지 미리 로드 (깜빡임 방지)
+nbImgs.forEach((img) => {
+  const hoverSrc = img.dataset.hover;
+  if (hoverSrc) {
+    const preloadImg = new Image();
+    preloadImg.src = hoverSrc;
+  }
+});
+
+// 마우스 오버 시 이미지 교체
 nbImgs.forEach((img) => {
   img.addEventListener("mouseover", () => {
     img.src = img.dataset.hover;
@@ -349,6 +362,7 @@ nbImgs.forEach((img) => {
     img.src = img.dataset.original;
   });
 });
+
 // 슬라이드 연동
 const newBtn = document.querySelector("#newBest .new_btn");
 const bestBtn = document.querySelector("#newBest .best_btn");
@@ -400,6 +414,7 @@ const t_bg_imgs = [
   "main_tutorial_facecube_re.jpg",
   "main_tutorial_lipshaper.jpg",
 ];
+
 // t_info 클릭 시 바뀔 이미지
 const t_gif_imgs = [
   ["tutorials_eye_browpowder.gif"],
@@ -435,8 +450,16 @@ const t_gif_imgs = [
   ],
 ];
 
+// gif 이미지 미리 로드
+t_gif_imgs.forEach((gifArray) => {
+  gifArray.forEach((gifName) => {
+    const img = new Image();
+    img.src = `images/${gifName}`;
+  });
+});
+
 let autoBorderRotate;
-let timeoutIds = []; // ⬅️ setTimeout 추적용 배열
+let timeoutIds = []; // setTimeout 추적용 배열
 
 const allInfo = document.querySelectorAll(".tSwiper .t_info");
 
